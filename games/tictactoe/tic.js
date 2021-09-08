@@ -1,3 +1,6 @@
+var playerXWins = 0;
+var player0Wins = 0;
+
 // Function called whenever user tab on any box
 function myfunc() {
 
@@ -25,7 +28,7 @@ function myfunc() {
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b1 == 'x' || b1 == 'X') && (b4 == 'x' ||
 		b4 == 'X') && (b7 == 'x' || b7 == 'X')) {
@@ -38,7 +41,7 @@ function myfunc() {
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
 
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b7 == 'x' || b7 == 'X') && (b8 == 'x' ||
 		b8 == 'X') && (b9 == 'x' || b9 == 'X')) {
@@ -50,7 +53,7 @@ function myfunc() {
 		document.getElementById("b4").disabled = true;
 		document.getElementById("b5").disabled = true;
 		document.getElementById("b6").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b3 == 'x' || b3 == 'X') && (b6 == 'x' ||
 		b6 == 'X') && (b9 == 'x' || b9 == 'X')) {
@@ -62,7 +65,7 @@ function myfunc() {
 		document.getElementById("b5").disabled = true;
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b1 == 'x' || b1 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b9 == 'x' || b9 == 'X')) {
@@ -74,7 +77,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b3 == 'x' || b3 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b7 == 'x' || b7 == 'X')) {
@@ -86,7 +89,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b2 == 'x' || b2 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b8 == 'x' || b8 == 'X')) {
@@ -98,7 +101,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 	else if ((b4 == 'x' || b4 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b6 == 'x' || b6 == 'X')) {
@@ -110,7 +113,7 @@ function myfunc() {
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player X won');
+		window.alert('Player X won'); playerXWins += 1;
 	}
 
 	// Checking of Player X finsh
@@ -126,7 +129,7 @@ function myfunc() {
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b1 == '0' || b1 == '0') && (b4 == '0' ||
 		b4 == '0') && (b7 == '0' || b7 == '0')) {
@@ -138,7 +141,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b7 == '0' || b7 == '0') && (b8 == '0' ||
 		b8 == '0') && (b9 == '0' || b9 == '0')) {
@@ -150,7 +153,7 @@ function myfunc() {
 		document.getElementById("b4").disabled = true;
 		document.getElementById("b5").disabled = true;
 		document.getElementById("b6").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b3 == '0' || b3 == '0') && (b6 == '0' ||
 		b6 == '0') && (b9 == '0' || b9 == '0')) {
@@ -162,7 +165,7 @@ function myfunc() {
 		document.getElementById("b5").disabled = true;
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b1 == '0' || b1 == '0') && (b5 == '0' ||
 		b5 == '0') && (b9 == '0' || b9 == '0')) {
@@ -174,7 +177,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b3 == '0' || b3 == '0') && (b5 == '0' ||
 		b5 == '0') && (b7 == '0' || b7 == '0')) {
@@ -186,7 +189,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b2 == '0' || b2 == '0') && (b5 == '0' ||
 		b5 == '0') && (b8 == '0' || b8 == '0')) {
@@ -198,7 +201,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 	else if ((b4 == '0' || b4 == '0') && (b5 == '0' ||
 		b5 == '0') && (b6 == '0' || b6 == '0')) {
@@ -210,7 +213,7 @@ function myfunc() {
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Player 0 won');
+		window.alert('Player 0 won'); playerOWins += 1;
 	}
 
 	// Checking of Player 0 finsh
@@ -241,7 +244,8 @@ function myfunc() {
 
 // Function to reset game
 function myfunc_2() {
-	location.reload();
+	document.getElementById('playerXWins').value = 'Player X Wins: ' + playerXWins;
+	document.getElementById('player0Wins').value = 'Player 0 Wins: ' + player0Wins;
 	document.getElementById('b1').value = '';
 	document.getElementById("b2").value = '';
 	document.getElementById("b3").value = '';
@@ -251,7 +255,6 @@ function myfunc_2() {
 	document.getElementById("b7").value = '';
 	document.getElementById("b8").value = '';
 	document.getElementById("b9").value = '';
-
 }
 
 // Here onwards, functions check turn of the player
