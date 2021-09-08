@@ -244,8 +244,6 @@ function myfunc() {
 
 // Function to reset game
 function myfunc_2() {
-	document.getElementById('playerXWins').value = 'Player X Wins: ' + playerXWins;
-	document.getElementById('player0Wins').value = 'Player 0 Wins: ' + player0Wins;
 	document.getElementById('b1').value = '';
 	document.getElementById("b2").value = '';
 	document.getElementById("b3").value = '';
@@ -255,6 +253,8 @@ function myfunc_2() {
 	document.getElementById("b7").value = '';
 	document.getElementById("b8").value = '';
 	document.getElementById("b9").value = '';
+	document.getElementById('playerXWins').value = 'Player X Wins: ' + playerXWins;
+	document.getElementById('player0Wins').value = 'Player 0 Wins: ' + player0Wins;
 }
 
 // Here onwards, functions check turn of the player
