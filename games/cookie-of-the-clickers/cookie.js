@@ -26,7 +26,10 @@ if (getCookie("cookies") == null)
 var num = getCookie("cookies");
 
 window.onload = function () {
-        var name = prompt("What is your name");
+        if (getCookie("name")) == null
+            var name = prompt("What is your name");
+        else
+            var name = getCookie("name");
         
         var space = document.getElementById("space");
         
