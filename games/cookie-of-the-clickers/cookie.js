@@ -22,14 +22,13 @@ function getCookie(cname) {
 }
 
 if (getCookie("cookies") == "")
-    setCookie("cookies", 0);
+    setCookie("cookies", 0, 9999999999999999999999999999);
 var num = getCookie("cookies");
 
 window.onload = function () {
         if (getCookie("name")) == ""
-            var name = prompt("What is your name");
-        else
-            var name = getCookie("name");
+            setCookie("name", prompt("What is your name?"), , 9999999999999999999999999999)
+        var name = getCookie("name");
         
         var space = document.getElementById("space");
         
