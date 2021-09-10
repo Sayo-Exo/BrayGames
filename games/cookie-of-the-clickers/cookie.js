@@ -21,12 +21,12 @@ function getCookie(cname) {
   return "";
 }
 
-if (getCookie("cookies") == null)
+if (getCookie("cookies") == "")
     setCookie("cookies", 0);
 var num = getCookie("cookies");
 
 window.onload = function () {
-        if (getCookie("name")) == null
+        if (getCookie("name")) == ""
             var name = prompt("What is your name");
         else
             var name = getCookie("name");
