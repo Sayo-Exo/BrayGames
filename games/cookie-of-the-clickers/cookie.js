@@ -26,6 +26,7 @@ if (getCookie("cookies") == "")
 var num = getCookie("cookies");
 var numbers = document.getElementById("numbers");
 numbers.innerHTML = num;
+var upgradeLevel = document.getElementById("upgradeLevel");
 
 window.onload = function () {
         if (getCookie("name") == "")
@@ -46,7 +47,6 @@ function cookieClick() {
     
     //upgrade level for printing
     var upgradeLevel = document.getElementById("upgradeLevel");
-    
     numbers.innerHTML = num;      
     //automatic Granny upgrade to 2x
     if(num >= 30 ){
@@ -73,4 +73,5 @@ function cookieClick() {
     }
 
     setCookie("cookies", num);
+    numbers.innerHTML = num;
 }
