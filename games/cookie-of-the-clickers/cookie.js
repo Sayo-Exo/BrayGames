@@ -69,4 +69,6 @@ function cookieClick() {
         num += 1000;
         upgradeLevel.innerHTML = "Super-Plant Level";
     }
+
+    setCookie("cookies", num);
 }
