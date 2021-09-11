@@ -24,6 +24,8 @@ function getCookie(cname) {
 if (getCookie("cookies") == "")
     setCookie("cookies", 0, 9999999999999999999999999999);
 var num = getCookie("cookies");
+var numbers = document.getElementById("numbers");
+numbers.innerHTML = num;
 
 window.onload = function () {
         if (getCookie("name") == "")
