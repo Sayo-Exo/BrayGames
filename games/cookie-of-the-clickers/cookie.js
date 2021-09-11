@@ -26,8 +26,8 @@ if (getCookie("cookies") == "")
 var num = getCookie("cookies");
 
 window.onload = function () {
-        if (getCookie("name")) == ""
-            setCookie("name", prompt("What is your name?"), , 9999999999999999999999999999)
+        if (getCookie("name") == "")
+            setCookie("name", prompt("What is your name?"), 9999999999999999999999999999)
         var name = getCookie("name");
         
         var space = document.getElementById("space");
