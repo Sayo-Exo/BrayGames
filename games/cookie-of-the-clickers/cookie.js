@@ -21,14 +21,14 @@ function getCookie(cname) {
   return "";
 }
 
-if (getCookie("cookies") == "")
-    setCookie("cookies", 0, 9999999999999999999999999999);
-var num = getCookie("cookies");
-var numbers = document.getElementById("numbers");
-numbers.innerHTML = num;
-var upgradeLevel = document.getElementById("upgradeLevel");
-
 window.onload = function () {
+        if (getCookie("cookies") == "")
+        setCookie("cookies", 0, 9999999999999999999999999999);
+        var num = getCookie("cookies");
+        var numbers = document.getElementById("numbers");
+        numbers.innerHTML = num;
+        var upgradeLevel = document.getElementById("upgradeLevel");
+
         if (getCookie("name") == "")
             setCookie("name", prompt("What is your name?"), 9999999999999999999999999999)
         var name = getCookie("name");
