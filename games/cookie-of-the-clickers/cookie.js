@@ -21,10 +21,11 @@ function getCookie(cname) {
   return "";
 }
 
+var num = 0;
 window.onload = function () {
         if (getCookie("cookies") == "")
             setCookie("cookies", 1, 9999999999999999999999999999);
-        var num = getCookie("cookies");
+        num = getCookie("cookies");
         var numbers = document.getElementById("numbers");
         numbers.innerHTML = num;
         var upgradeLevel = document.getElementById("upgradeLevel");
