@@ -43,7 +43,6 @@ var cookie = document.getElementById("cookie");
 
 function cookieClick() { 
     num += 1;
-    setCookie("cookiezs", num, 99999999999999999999999999999);
 
     var numbers = document.getElementById("numbers");
     
@@ -74,6 +73,6 @@ function cookieClick() {
         upgradeLevel.innerHTML = "Super-Plant Level";
     }
 
-    setCookie("cookies", num);
+    setCookie("cookiezs", num);
     numbers.innerHTML = num;
 }
