@@ -23,9 +23,9 @@ function getCookie(cname) {
 
 var num = 0;
 window.onload = function () {
-        if (getCookie("cookies") == "")
-            setCookie("cookies", 1, 9999999999999999999999999999);
-        num = getCookie("cookies");
+        if (getCookie("cookiezs") == "")
+            setCookie("cookiezs", 1, 9999999999999999999999999999);
+        num = getCookie("cookiezs");
         var numbers = document.getElementById("numbers");
         numbers.innerHTML = num;
         var upgradeLevel = document.getElementById("upgradeLevel");
