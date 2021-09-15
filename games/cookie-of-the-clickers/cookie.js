@@ -2,7 +2,7 @@ function setCookie(cname, cvalue, exdays = 10000000000) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=None; Secure";
 }
 
 function getCookie(cname) {
@@ -21,10 +21,12 @@ function getCookie(cname) {
   return "";
 }
 
+var num = 0
+var name = ""
 window.onload = function () {
         if (getCookie("cookies") == "")
         setCookie("cookies", 0, 9999999999999999999999999999);
-        var num = getCookie("cookies");
+        num = getCookie("cookies");
         var numbers = document.getElementById("numbers");
         numbers.innerHTML = num;
         var upgradeLevel = document.getElementById("upgradeLevel");
