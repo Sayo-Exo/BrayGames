@@ -24,7 +24,7 @@ function getCookie(cname) {
 var num = 0;
 window.onload = function () {
         if (getCookie("cookiezs") == "")
-            setCookie("cookiezs", 1, 9999999999999999999999999999);
+            setCookie("cookiezs", num, 9999999999999999999999999999);
         num = getCookie("cookiezs");
         var numbers = document.getElementById("numbers");
         numbers.innerHTML = num;
@@ -43,6 +43,7 @@ var cookie = document.getElementById("cookie");
 
 function cookieClick() { 
     num += 1;
+    setCookie("cookiezs", num, 99999999999999999999999999999);
 
     var numbers = document.getElementById("numbers");
     
