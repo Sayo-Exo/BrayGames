@@ -1,4 +1,5 @@
 let gameState = 'start';
+let multiplayer = confirm("Multiplayer?") == true;
 let paddle_1 = document.querySelector('.paddle_1');
 let paddle_2 = document.querySelector('.paddle_2');
 let board = document.querySelector('.board');
@@ -36,21 +37,28 @@ if (e.key == 'Enter') {
 	}
 }
 if (gameState == 'play') {
-	if (e.key == 'w') {
-	paddle_1.style.top =
-		Math.max(
-		board_coord.top,
-		paddle_1_coord.top - window.innerHeight * 0.06
-		) + 'px';
-	paddle_1_coord = paddle_1.getBoundingClientRect();
-	}
-	if (e.key == 's') {
-	paddle_1.style.top =
-		Math.min(
-		board_coord.bottom - paddle_common.height,
-		paddle_1_coord.top + window.innerHeight * 0.06
-		) + 'px';
-	paddle_1_coord = paddle_1.getBoundingClientRect();
+	if (multiplayer) {
+		if (e.key == 'w') {
+			paddle_1.style.top =
+				Math.max(
+				board_coord.top,
+				paddle_1_coord.top - window.innerHeight * 0.06
+				) + 'px';
+			paddle_1_coord = paddle_1.getBoundingClientRect();
+			}
+			if (e.key == 's') {
+			paddle_1.style.top =
+				Math.min(
+				board_coord.bottom - paddle_common.height,
+				paddle_1_coord.top + window.innerHeight * 0.06
+				) + 'px';
+			paddle_1_coord = paddle_1.getBoundingClientRect();
+			}
+		{
+	else
+	{
+		paddle_1.style.top = ball_coord.style.top
+		paddle_1.style.bottom = ball_coord.style.bottom
 	}
 
 	if (e.key == 'ArrowUp') {
