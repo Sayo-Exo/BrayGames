@@ -1,7 +1,7 @@
 let gameState = 'start';
 var multiplayer = false;
-if (confirm("Multiplayer?"))
-	multiplayer = true;
+// if (confirm("Multiplayer?"))
+// 	multiplayer = true;
 let paddle_1 = document.querySelector('.paddle_1');
 let paddle_2 = document.querySelector('.paddle_2');
 let board = document.querySelector('.board');
