@@ -149,3 +149,4 @@ requestAnimationFrame(() => {
 	moveBall(dx, dy, dxd, dyd);
 });
 }
+document.getElementById("pressenter").text = "Press Enter To Play Pong";
