@@ -27,14 +27,8 @@ function UPDATE()
 {
 	if (!multiplayer)
 	{
-		paddle_1.style.top =
-			Math.max(
-			board_coord.top,
-			ball_coord.top) + "px";
-		paddle_1.style.bottom =
-			Math.max(
-			board_coord.bottom,
-			ball_coord.bottom) + "px";
+		paddle_1.style.top = ball_coord.top + "px";
+		paddle_1.style.bottom = ball_coord.bottom"px";
 	}
 }
 update = setInterval(UPDATE, 60);
