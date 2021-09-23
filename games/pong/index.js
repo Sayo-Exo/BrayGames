@@ -56,7 +56,8 @@ if (gameState == 'play') {
 				) + 'px';
 			paddle_1_coord = paddle_1.getBoundingClientRect();
 			}
-		{
+		}
+	}
 	else
 	{
 		paddle_1.style.top = ball_coord.style.top
@@ -79,7 +80,6 @@ if (gameState == 'play') {
 		) + 'px';
 	paddle_2_coord = paddle_2.getBoundingClientRect();
 	}
-}
 });
 
 function moveBall(dx, dy, dxd, dyd) {
