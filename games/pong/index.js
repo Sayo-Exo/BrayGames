@@ -1,7 +1,7 @@
 let gameState = 'start';
 var multiplayer = false;
-// if (confirm("Multiplayer?"))
-// 	multiplayer = true;
+if (confirm("Multiplayer?"))
+	multiplayer = true;
 let paddle_1 = document.querySelector('.paddle_1');
 let paddle_2 = document.querySelector('.paddle_2');
 let board = document.querySelector('.board');
@@ -60,8 +60,8 @@ if (gameState == 'play') {
 	}
 	else
 	{
-		paddle_1.style.top = ball_coord.style.top
-		paddle_1.style.bottom = ball_coord.style.bottom
+		paddle_1.style.top = ball_coord.style_top;
+		paddle_1.style.bottom = ball_coord.style.bottom;
 	}
 
 	if (e.key == 'ArrowUp') {
