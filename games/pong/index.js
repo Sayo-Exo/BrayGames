@@ -23,6 +23,22 @@ let dy = Math.floor(Math.random() * 4) + 3;
 let dxd = Math.floor(Math.random() * 2);
 let dyd = Math.floor(Math.random() * 2);
 
+function UPDATE()
+{
+	if (!multiplayer)
+	{
+		paddle_1.style.top =
+			Math.max(
+			board_coord.top,
+			ball_coord.top) + "px";
+		paddle_1.style.bottom =
+			Math.max(
+			board_coord.bottom,
+			ball_coord.bottom) + "px";
+	}
+}
+update = setInterval(UPDATE, 60);
+
 document.addEventListener('keydown', (e) => {
 if (e.key == 'Enter') {
 	gameState = gameState == 'start' ? 'play' : 'start';
@@ -58,18 +74,6 @@ if (gameState == 'play') {
 			}
 		}
 	}
-	else
-	{
-		paddle_1.style.top =
-			Math.max(
-			board_coord.top,
-			ball_coord.top) + "px";
-		paddle_1.style.bottom =
-			Math.max(
-			board_coord.bottom,
-			ball_coord.bottom) + "px";
-	}
-
 	if (e.key == 'ArrowUp') {
 	paddle_2.style.top =
 		Math.max(
