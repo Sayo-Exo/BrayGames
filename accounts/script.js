@@ -1,3 +1,8 @@
+randoms = {
+  word1: ["Cool", "Super", "Nice", "Epic", "Wowers", "Pogger"],
+  word2: ["Man", "World", "Boy", "Girl", "Frogger", "Tortoise", "Cat"]
+}
+
 function setCookie(cname, cvalue, exdays=null) {
   var expires = "";
   if (exdays != null) {
@@ -30,11 +35,18 @@ function GetUsername() {
         SetUsername();
     } else
     {
-        usernameTXT.innerHTML = "Username: " + getCookie("username");
+        username = getCookie("username");
+        usernameTXT.innerHTML = "Username: " + username;
     }
+}
+function RandomUsername()
+{
+    var word1 = randoms.word1[Math.random(randoms.word1) * randoms.word1.length];
+    var word2 = randoms.word2[Math.random(randoms.word2) * randoms.word2.length];
+    var num = Math.random() * 1000;
+    return word1 + word2 + num;
 }
 function SetUsername()
 {
-    
+    setCookie("username", prompt("Enter a username", RandomUsername()));
 }
-username = GetUsername();
