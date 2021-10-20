@@ -1,7 +1,7 @@
-randoms = {
+var randoms = {
   word1: ["Cool", "Super", "Nice", "Epic", "Wowers", "Pogger"],
   word2: ["Man", "World", "Boy", "Girl", "Frogger", "Tortoise", "Cat"]
-}
+};
 
 function setCookie(cname, cvalue, exdays=null) {
   var expires = "";
@@ -29,7 +29,8 @@ function getCookie(cname) {
   return "";
 }
 
-usernameTXT = document.getElementById("username");
+var usernameTXT = document.getElementById("username");
+var username = "";
 function GetUsername() {
     if (getCookie("username") == "") {
         SetUsername();
