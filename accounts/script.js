@@ -17,7 +17,10 @@ function getCookie(cname) {
 usernameTXT = document.getElementById("username");
 function GetUsername() {
     if (getCookie("username") == "") {
-        usernameTXT = "(not logged in)"
+        usernameTXT.innerHTML = "(not logged in)";
+    } else
+    {
+        usernameTXT.innerHTML = "Username: " + getCookie("username");
     }
 }
 username = GetUsername();
