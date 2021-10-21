@@ -15,6 +15,7 @@ var gameState = 'start';
 var multiplayer = false;
 if (confirm("Multiplayer?"))
 	multiplayer = true;
+console.log("Multiplayer: " + multiplayer);
 var paddle_1 = document.querySelector('.paddle_1');
 var paddle_2 = document.querySelector('.paddle_2');
 var board = document.querySelector('.board');
@@ -35,6 +36,7 @@ var dx = Math.floor(Math.random() * 4) + 3;
 var dy = Math.floor(Math.random() * 4) + 3;
 var dxd = Math.floor(Math.random() * 2);
 var dyd = Math.floor(Math.random() * 2);
+console.log("Grabbed items");
 
 document.addEventListener('keydown', (e) => {
 if (e.key == 'Enter') {
@@ -88,6 +90,7 @@ if (gameState == 'play') {
 	paddle_2_coord = paddle_2.getBoundingClientRect();
 	}
 });
+console.log("Keylistener added");
 
 function moveBall(dx, dy, dxd, dyd) {
 if (ball_coord.top <= board_coord.top) {
@@ -135,16 +138,14 @@ ball.style.top = ball_coord.top + dy * (dyd == 0 ? -1 : 1) + 'px';
 ball.style.left = ball_coord.left + dx * (dxd == 0 ? -1 : 1) + 'px';
 ball_coord = ball.getBoundingClientRect();
 requestAnimationFrame(() => {
-	moveBall(dx, dy, dxd, dyd);
-});
-}
-document.getElementById("pressenter").text = "Press Enter To Play Pong";
-function UPDATE()
-{
 	if (!multiplayer)
 	{
 		paddle_1.style.top = ball_coord.top + "px";
 		paddle_1.style.bottom = ball_coord.bottom + "px";
 	}
+	moveBall(dx, dy, dxd, dyd);
+});
 }
-setInterval(UPDATE, 60);
+Console.log("Update function done");
+document.getElementById("pressenter").text = "Press Enter To Play Pong";
+Debug.Log("Ready to play!");
