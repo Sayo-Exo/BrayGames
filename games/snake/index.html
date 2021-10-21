@@ -23,7 +23,8 @@ COLS = 26,
 ROWS = 26,
 EMPTY = 0,
 SNAKE = 1,
-FRUIT = 2,
+SNAKE_HEAD = 2,
+FRUIT = 3,
 LEFT  = 0,
 UP    = 1,
 RIGHT = 2,
@@ -150,7 +151,7 @@ function init() {
 
 	var sp = {x:Math.floor(COLS/2), y:ROWS-1};
 	snake.init(UP, sp.x, sp.y);
-	grid.set(SNAKE, sp.x, sp.y);
+	grid.set(SNAKE_HEAD, sp.x, sp.y);
 
 	setFood();
 }
@@ -241,6 +242,9 @@ function draw() {
 					break;
 				case SNAKE:
 					ctx.fillStyle = "#00FF00";
+					break;
+				case SNAKE_HEAD:
+					ctx.fillStyle = "#006400";
 					break;
 				case FRUIT:
 					ctx.fillStyle = "#FF0000";
