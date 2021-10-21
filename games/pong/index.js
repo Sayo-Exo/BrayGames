@@ -36,16 +36,6 @@ var dy = Math.floor(Math.random() * 4) + 3;
 var dxd = Math.floor(Math.random() * 2);
 var dyd = Math.floor(Math.random() * 2);
 
-function UPDATE()
-{
-	if (!multiplayer)
-	{
-		paddle_1.style.top = ball_coord.top + "px";
-		paddle_1.style.bottom = ball_coord.bottom + "px";
-	}
-}
-setInterval(UPDATE, 60);
-
 document.addEventListener('keydown', (e) => {
 if (e.key == 'Enter') {
 	gameState = gameState == 'start' ? 'play' : 'start';
@@ -149,3 +139,12 @@ requestAnimationFrame(() => {
 });
 }
 document.getElementById("pressenter").text = "Press Enter To Play Pong";
+function UPDATE()
+{
+	if (!multiplayer)
+	{
+		paddle_1.style.top = ball_coord.top + "px";
+		paddle_1.style.bottom = ball_coord.bottom + "px";
+	}
+}
+setInterval(UPDATE, 60);
