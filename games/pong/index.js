@@ -1,7 +1,6 @@
 if (!console) {
 	console = {};
 }
-var old = console.log;
 var logger = document.getElementById('log');
 console.log = function (message) {
 	if (typeof message == 'object') {
@@ -9,43 +8,43 @@ console.log = function (message) {
 	} else {
 		logger.innerHTML += message + '<br />';
 	}
-}
+};
 console.log("Started!");
 
-let gameState = 'start';
+var gameState = 'start';
 var multiplayer = false;
 if (confirm("Multiplayer?"))
 	multiplayer = true;
-let paddle_1 = document.querySelector('.paddle_1');
-let paddle_2 = document.querySelector('.paddle_2');
-let board = document.querySelector('.board');
-let initial_ball = document.querySelector('.ball');
-let ball = document.querySelector('.ball');
-let score_1 = document.querySelector('.player_1_score');
-let score_2 = document.querySelector('.player_2_score');
-let message = document.querySelector('.message');
-let paddle_1_coord = paddle_1.getBoundingClientRect();
-let paddle_2_coord = paddle_2.getBoundingClientRect();
-let initial_ball_coord = ball.getBoundingClientRect();
-let ball_coord = initial_ball_coord;
-let board_coord = board.getBoundingClientRect();
-let paddle_common =
+var paddle_1 = document.querySelector('.paddle_1');
+var paddle_2 = document.querySelector('.paddle_2');
+var board = document.querySelector('.board');
+var initial_ball = document.querySelector('.ball');
+var ball = document.querySelector('.ball');
+var score_1 = document.querySelector('.player_1_score');
+var score_2 = document.querySelector('.player_2_score');
+var message = document.querySelector('.message');
+var paddle_1_coord = paddle_1.getBoundingClientRect();
+var paddle_2_coord = paddle_2.getBoundingClientRect();
+var initial_ball_coord = ball.getBoundingClientRect();
+var ball_coord = initial_ball_coord;
+var board_coord = board.getBoundingClientRect();
+var paddle_common =
 	document.querySelector('.paddle').getBoundingClientRect();
 
-let dx = Math.floor(Math.random() * 4) + 3;
-let dy = Math.floor(Math.random() * 4) + 3;
-let dxd = Math.floor(Math.random() * 2);
-let dyd = Math.floor(Math.random() * 2);
+var dx = Math.floor(Math.random() * 4) + 3;
+var dy = Math.floor(Math.random() * 4) + 3;
+var dxd = Math.floor(Math.random() * 2);
+var dyd = Math.floor(Math.random() * 2);
 
 function UPDATE()
 {
 	if (!multiplayer)
 	{
 		paddle_1.style.top = ball_coord.top + "px";
-		paddle_1.style.bottom = ball_coord.bottom"px";
+		paddle_1.style.bottom = ball_coord.bottom + "px";
 	}
 }
-update = setInterval(UPDATE, 60);
+setInterval(UPDATE, 60);
 
 document.addEventListener('keydown', (e) => {
 if (e.key == 'Enter') {
