@@ -229,9 +229,7 @@ function update() {
 
 
 function draw() {
-	
-	ctx.fillStyle = "#000";
-	ctx.fillText("SCORE: " + score, 10, canvas.height+15);
+	x
 	var tw = canvas.width/grid.width;
 	var th = canvas.height/grid.height;
 	
@@ -255,6 +253,8 @@ function draw() {
 			ctx.fillRect(x*tw, y*th, tw, th);
 		}
 	}
+	ctx.fillStyle = "#000";
+	ctx.fillText("SCORE: " + score, 10, canvas.height-50);
 }
 
 
