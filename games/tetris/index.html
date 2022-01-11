@@ -32,7 +32,6 @@
       <p><canvas id="upcoming"></canvas></p>
       <p>score <span id="score">00000</span></p>
       <p>rows <span id="rows">0</span></p>
-      <input id="cheatInput" type="text"></input><button id="cheatSubmit">Submit</button>
     </div>
     <canvas id="canvas">
       Sorry, this game cannot be run because your browser does not support the &lt;canvas&gt; element
@@ -70,10 +69,6 @@
     //-------------------------------------------------------------------------
     // game constants
     //-------------------------------------------------------------------------
-
-    var cheatInput = get("cheatInput");
-    var cheatSubmit = get("cheatSubmit");
-    cheatSubmit.setAttribute("onclick", );
     var KEY     = { ESC: 27, SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 },
         DIR     = { UP: 0, RIGHT: 1, DOWN: 2, LEFT: 3, MIN: 0, MAX: 3 },
         stats   = new Stats(),
