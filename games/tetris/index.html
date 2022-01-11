@@ -258,7 +258,7 @@
     
     function setVisualScore(n)      { vscore = n || score; invalidateScore(); }
     function setScore(n)            { score = n; setVisualScore(n);  }
-    function addScore(n)            { score = score + n; if(score >= document.getCookie("highscore")) { document.cookie="highscore=" + score + ";"; }   }
+    function addScore(n)            { score = score + n; /* if(score >= document.getCookie("highscore")) { document.cookie="highscore=" + score + ";"; */ }   }
     function clearScore()           { setScore(0); }
     function clearRows()            { setRows(0); }
     function setRows(n)             { rows = n; step = Math.max(speed.min, speed.start - (speed.decrement*rows)); invalidateRows(); }
