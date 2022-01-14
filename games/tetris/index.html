@@ -27,14 +27,14 @@
 <body>
 
   <div id="tetris">
-    <audio id="music">
-      <source src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg" type="audio/ogg">
-    </audio>
     <div id="menu">
       <p id="start"><a href="javascript:play();">Press Space to Play.</a></p>
       <p><canvas id="upcoming"></canvas></p>
       <p>score <span id="score">00000</span></p>
       <p>rows <span id="rows">0</span></p>
+      <audio controls id="music">
+        <source src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg" type="audio/ogg">
+      </audio>
     </div>
     <canvas id="canvas">
       Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
@@ -254,11 +254,9 @@
     function clearActions()         { actions = []; }
     function setCurrentPiece(piece) { current = piece || randomPiece(); invalidate();     }
     function setNextPiece(piece)    { next    = piece || randomPiece(); invalidateNext(); }
-    function playMusic(music)       { var music = document.getElementById("music"); music.source = music; music.Stop(); music.Play(); }
 
     function reset() {
       dt = 0;
-      playMusic("https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg");
       clearActions();
       clearBlocks();
       clearRows();
