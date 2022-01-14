@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Javascript Tetris</title>
+  <title>BrayGames - Tetris</title>
   <style>
     body      { font-family: Helvetica, sans-serif; }
     #tetris   { margin: 1em auto; padding: 1em; border: 4px solid black; border-radius: 10px; background-color: #F8F8F8; }
@@ -27,6 +27,9 @@
 <body>
 
   <div id="tetris">
+    <audio id="music">
+      <source src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg" type="audio/ogg">
+    </audio>
     <div id="menu">
       <p id="start"><a href="javascript:play();">Press Space to Play.</a></p>
       <p><canvas id="upcoming"></canvas></p>
@@ -251,9 +254,11 @@
     function clearActions()         { actions = []; }
     function setCurrentPiece(piece) { current = piece || randomPiece(); invalidate();     }
     function setNextPiece(piece)    { next    = piece || randomPiece(); invalidateNext(); }
+    function playMusic(music)       { var music = document.getElementById("music"); music.source = music; music.Stop(); music.Play(); }
 
     function reset() {
       dt = 0;
+      playMusic("https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg");
       clearActions();
       clearBlocks();
       clearRows();
