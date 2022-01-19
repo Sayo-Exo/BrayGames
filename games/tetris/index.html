@@ -225,7 +225,9 @@
           case KEY.RIGHT:  actions.push(DIR.RIGHT); handled = true; break;
           case KEY.UP:     actions.push(DIR.UP);    handled = true; break;
           case KEY.DOWN:   actions.push(DIR.DOWN);  handled = true; break;
-          case KEY.SPACE:  dropPiece();             handled = true; break;
+          case KEY.O:      dropPiece();             handled = true; break;
+          case KEY.H:      removeLine(0);           handled = true; break;
+          case KEY.SPACE:  instantDrop();             handled = true; break;
           case KEY.ESC:    lose();                  handled = true; break;
         }
       }
@@ -328,6 +330,20 @@
           lose();
         }
       }
+    }
+    
+    function instantDrop() {
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
+      drop();
     }
 
     function dropPiece() {
