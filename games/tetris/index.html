@@ -207,8 +207,8 @@
     }
 
     function resize(event) {
-      canvas.width   = canvas.clientWidth;  // set canvas logical size equal to its physical size
-      canvas.height  = canvas.clientHeight; // (ditto)
+      canvas.width   = canvas.clientWidth + 200;  // set canvas logical size equal to its physical size
+      canvas.height  = canvas.clientHeight + 200; // (ditto)
       ucanvas.width  = ucanvas.clientWidth;
       ucanvas.height = ucanvas.clientHeight;
       dx = canvas.width  / nx; // pixel size of a single tetris block
