@@ -73,7 +73,7 @@
     // game constants
     //-------------------------------------------------------------------------
 
-    var KEY     = { ESC: 27, SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40, O: 79, H: 72 },
+    var KEY     = { ESC: 27, SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40, O: 79, H: 72, R: 82 },
         DIR     = { UP: 0, RIGHT: 1, DOWN: 2, LEFT: 3, MIN: 0, MAX: 3 },
         stats   = new Stats(),
         canvas  = get('canvas'),
@@ -229,6 +229,7 @@
           case KEY.H:      removeLine(0);           handled = true; break;
           case KEY.SPACE:  instantDrop();           handled = true; break;
           case KEY.ESC:    lose();                  handled = true; break;
+          case KEY.R:      reset();
         }
       }
       else if (ev.keyCode == KEY.SPACE) {
