@@ -52,23 +52,23 @@ body {
 }
 
 .pong {
-    background-image: url(/games/pong/image.jpg);
+    background-image: url(./games/pong/image.jpg);
 }
 
 .tic-tac-toe {
-    background-image: url(/games/tictactoe/image.jpg);
+    background-image: url(./games/tictactoe/image.jpg);
 }
 
 .tetris {
-    background-image: url(/games/tetris/image.jpg);
+    background-image: url(./games/tetris/image.jpg);
 }
 
 .snake {
-    background-image: url(/games/snake/image.jpg);
+    background-image: url(./games/snake/image.jpg);
 }
 
 .gameup {
-    background-image: url(/games/gameup/image.jpg);
+    background-image: url(./games/gameup/image.jpg);
 }
 
 text-center {
