@@ -1,7 +1,7 @@
 {
 "companyName": "5298E71D-34A4-41AD-8E5E-676430939D46",
 "productName": "Gameup",
-"productVersion": "1.0.0.0",
+"productVersion": "1.1.0",
 "dataUrl": "WebGL.data.unityweb",
 "wasmCodeUrl": "WebGL.wasm.code.unityweb",
 "wasmFrameworkUrl": "WebGL.wasm.framework.unityweb",
