@@ -71,6 +71,10 @@ body {
     background-image: url(./games/gameup/image.jpg);
 }
 
+.flyingcircles {
+    background-image: url(./games/flyingcircles/image.jpg);
+}
+
 text-center {
     text-align: center;
 }
