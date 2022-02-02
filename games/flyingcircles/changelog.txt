@@ -1,5 +1,6 @@
 Flying Circles
 
-Version 1.1.0
+Version 1.1.1
 
 - haha boss battle go BRRRRRRRRRRRRRRRRRRRRRRRRRR (go to the right xd)
+- haha mobile support also go BRrrRrRrR
