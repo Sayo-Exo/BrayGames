@@ -1,13 +1,5 @@
 Flying Circles
 
-Version 1.0.1
+Version 1.1.0
 
-- Random entity now sends you in a random direction between 15 and 30
-- Inverse Gravity entity now stops your x-axis velocity
-- Made player launch line shorter and fade out
-- Added smile to player
-- Made spawning system based on chance to spawn
-- Adding splitting upgrade (10% chance of splitting every hit)
-- Fixed red bois not giving you score
-- Added lava bubble effects to lava
-- Reduced section 1's spawns from 450 to 300 to hopefully improve performance
+- haha boss battle go BRRRRRRRRRRRRRRRRRRRRRRRRRR (go to the right xd)
