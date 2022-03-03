@@ -75,6 +75,10 @@ body {
     background-image: url(./games/flyingcircles/image.jpg);
 }
 
+.rooftopsnipers1 {
+    background-image: url(./games/rooftopsnipers1/image.jpg);
+}
+
 text-center {
     text-align: center;
 }

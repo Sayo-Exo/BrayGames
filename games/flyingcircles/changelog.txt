@@ -1,6 +1,7 @@
 Flying Circles
 
-Version 1.1.1
+Version 1.1.2
 
-- haha boss battle go BRRRRRRRRRRRRRRRRRRRRRRRRRR (go to the right xd)
-- haha mobile support also go BRrrRrRrR
+- Added how much money you got for destroying an enemy to the score popup
+- Added buggy infinite game mode
+- Made player force relative to line length

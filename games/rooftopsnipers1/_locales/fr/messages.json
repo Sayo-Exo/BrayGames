@@ -1,0 +1,17 @@
+{
+  "name": {
+    "message": "Rooftop Snipers Unblocked"
+  },
+  "description": {
+    "message": "Rooftop Snipers Unblocked game: shoot your opponent and with a help of knockback power throw him down from rooftop"
+  },
+  "play": {
+    "message": "Play"
+  },
+  "got_it": {
+    "message": "OK, got it"
+  },
+  "installed": {
+    "message": "Game extension is installed"
+  }
+}
