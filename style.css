@@ -83,6 +83,10 @@ body {
     background-image: url(./games/roofy/icon.png);
 }
 
+.circle {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNCJql82k_zeGNVAknYw5BUI9j5jiV6PHWw:https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/LACMTA_Circle_Blue_Line.svg/1024px-LACMTA_Circle_Blue_Line.svg.png&usqp=CAU);
+}
+
 text-center {
     text-align: center;
 }
