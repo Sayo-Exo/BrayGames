@@ -1,0 +1,12 @@
+<color=#9900FF>Roofy Ragdolls 0.0.7</color>
+---
+<color=#02F2F2>ADDED: </color>hats
+<color=#02F2F2>ADDED: </color>cool guy codes in settings
+<color=#02F2F2>ADDED: </color>this menu
+<color=#02F2F2>ADDED: </color>more colors
+<color=#02F2F2>ADDED: </color>a freecam that you can toggle in-game with B
+---
+<color=#03DC03>FIXED: </color>insane scores in games
+---
+<color=#FFAB40>CHANGED: </color>title screen UI
+<color=#FFAB40>CHANGED: </color>customization menu UI
