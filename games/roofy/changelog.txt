@@ -4,6 +4,7 @@
 <color=#02F2F2>ADDED: </color>cool guy codes in settings
 <color=#02F2F2>ADDED: </color>this menu
 <color=#02F2F2>ADDED: </color>more colors
+<color=#02F2F2>ADDED: </color>a freecam that you can toggle in-game with B
 ---
 <color=#03DC03>FIXED: </color>insane scores in games
 ---
